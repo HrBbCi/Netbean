@@ -1,0 +1,22 @@
+Project này chưa làm theo hướng đối tượng
+1- các bạn khai báo lại và Validate các mối liên kết như xóa lớp có giáo viên dạy nhưng không thể xóa được vì đang có 1 giáo viên dạy lớp đó các bạn nhớ không phải validate bằng khóa ngoại kháo chính khi ném lỗi exception vì ném exception nó rất nhiều loại exception nên phải validate bằng code tự viết
+2- validate ngày sinh chú ý tới tuổi sinh viên, giáo viên giáo vụ, admin trong khoảng nào nếu không đúng khoảng đó cho ra thông báo!
+3- Làm theo hướng đối tượng OOP để có Diagram giữa các class với nhau
+Xem lại lập trình hướng đối tượng oop là gì http://giai-ma.blogspot.com/2016/07/khai-niem-huong-oi-tuong-oop-trong-java.html
+4- note: nếu làm được theo mô hình MVC có thể được công điểm
+==>>> OOP + MVC =>> good!
+
+public class Khoa {
+	private String IDkhoa;
+	private String Tenkhoa
+}
+public class Giaovien extends Khoa{
+	....
+}
+public class Giaovien {
+	private Khoa khoa;
+	...
+}
+.....vvv
+
+//Trên đây là một vài lời góp ý để cải thiện project hoàn trỉnh hơn.

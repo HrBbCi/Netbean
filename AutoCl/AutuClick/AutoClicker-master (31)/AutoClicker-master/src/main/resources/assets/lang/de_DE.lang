@@ -1,0 +1,57 @@
+trayNotSupported=Sorry, Tray is not supported on this system! Falling back to minimize...
+hotkeysNotSupported=Hotkeys (jnativehook) not supported!
+systemIsHeadless=Cannot create java.awt.Robot! Is system headless?
+systemIsWorking=All systems working! ☺
+errorTitle=AutoClicker Boot Error - System Not Supported
+
+autoclicker.activate=Aktiviert
+autoclicker.activateordisable=Aktivierung
+autoclicker.activation=Aktivierung
+autoclicker.clicks=Klicks
+autoclicker.technologies=Technologien
+autoclicker.bypassKeystrokesPlugins=KeyStrokes Plugins umgehen
+autoclicker.directStopTechnology=Benutze Direct Stop
+autoclicker.questionHotkey=Anderen Hotkey auswählen?
+
+
+autoclicker.lmb=Linke Maustaste
+autoclicker.mmb=Mittlere Maustaste
+autoclicker.rmb=Rechte Maustaste
+
+autoclicker.langaugeChange.text=Sprache
+
+autoclicker.clickCounterDescription=Klicke auf den Knopf und sehe deine Klicks!
+autoclicker.clickCounter.comboBox1.item1=Klicks die Sekunde
+autoclicker.clickCounter.comboBox1.item2=Klicks die Minute
+autoclicker.clickCounter.comboBox1.item3=Klicks die Stunde
+autoclicker.clickCounter.comboBox1.item4=All Time
+
+
+autoclicker.tab.generalSettings=Einstellungen
+autoclicker.tab.clicks=Klicks
+autoclicker.tab.clickCounter=Klick Zähler
+autoclicker.tab.datamanagement=Verwaltung
+autoclicker.tab.statistics=Statistiken
+autoclicker.tab.mode=Modus
+autoclicker.tab.hotkeyselection=Hotkey auswahl
+autoclicker.tab.wipestats=Statistiken löschen
+
+autoclicker.tab.soon.message1=Bauarbeiten!
+autoclicker.tab.soon.message2=Entschuldigung, hier wird noch gebaut!
+
+autoclicker.time.seconds=%s Sekunden, 
+autoclicker.time.minutes=%s Minuten, 
+autoclicker.time.hours=%s Stunden, 
+autoclicker.time.days=%s Tage, 
+autoclicker.time.years=%s Jahre, 
+
+autoclicker.time.second=%s Sekunde, 
+autoclicker.time.minute=%s Minute, 
+autoclicker.time.hour=%s Stunde, 
+autoclicker.time.day=%s Tag, 
+autoclicker.time.year=%s Jahr,
+
+tooltip.bypassKeystrokesPlugins=Wenn du die Mausanschläge von Plugins anzeigen lassen willst, deaktiviere diese Option.<nl><nl>Für erfahrene Benutzer:<nl>Diese Einstellung aktiviert die Option "no click delay", d.h. zwischen den Tastendruck und dem loslassen ist keine Verzögerung.
+tooltip.directStop=Wenn diese Einstellung aktiviert ist, stoppt der AutoKlicker sofort, wenn der Hotkey lossgelassen wird. <nl><nl>Ohne diese Einstellung führt der Hotkey seinen Tick noch aus.
+tooltip.cps=Hier kannst du die Klicks die Sekunde einstellen.
+tooltip.activation=Sobald die du angegebene Taste drückst, aktiviert sich der AutoKlicker.<nl>Falls dir diese Taste nicht gefällt, ändere sie einfach mit einem Klicks auf "Anderen Hotkey auswählen?".

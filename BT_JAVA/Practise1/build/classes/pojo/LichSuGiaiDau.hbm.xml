@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 14, 2013 1:16:04 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojo.LichSuGiaiDau" table="LichSuGiaiDau" schema="dbo" catalog="Caro">
+        <composite-id name="id" class="pojo.LichSuGiaiDauId">
+            <key-property name="userName" type="string">
+                <column name="userName" />
+            </key-property>
+            <key-property name="maGiaiDau" type="int">
+                <column name="maGiaiDau" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="giaiDau" class="pojo.GiaiDau" update="false" insert="false" fetch="select">
+            <column name="maGiaiDau" not-null="true" />
+        </many-to-one>
+        <many-to-one name="nguoiDung" class="pojo.NguoiDung" update="false" insert="false" fetch="select">
+            <column name="userName" not-null="true" />
+        </many-to-one>
+        <property name="diem" type="java.lang.Integer">
+            <column name="diem" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="544" style="-fx-background-color: #22313F;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoclicker.tab.GeneralSettingsTab">
+    <JFXToggleButton fx:id="enableCheckbox" alignment="TOP_LEFT" layoutX="149.0" layoutY="74.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="391.0" size="8.0" text="Enable" textFill="WHITE" unToggleLineColor="#434343">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </JFXToggleButton>
+    <Separator layoutX="144.0" layoutY="80.0" orientation="VERTICAL" prefHeight="40.0" />
+    <Label fx:id="enableDisableLabel" layoutX="28.0" layoutY="90.0" text="Enable/Disable" textFill="WHITE">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Label>
+    <Separator layoutX="144.0" layoutY="125.0" orientation="VERTICAL" prefHeight="40.0" />
+    <Label fx:id="activationLabel" layoutX="28.0" layoutY="135.0" text="Activation" textFill="WHITE">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Label>
+    <FontAwesomeIcon fill="WHITE" glyphName="KEYBOARD_ALT" layoutX="162.0" layoutY="154.0" size="2em" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Label fx:id="hotkeyLbl" layoutX="199.0" layoutY="135.0" text="SHIFT + J" textFill="WHITE">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Label>
+    <JFXButton fx:id="questionHotkey" layoutX="150.0" layoutY="165.0" mnemonicParsing="false" onAction="#changeHotkey" text="You dont want this hotkey?" textFill="#949494" />
+    <Separator layoutX="144.0" layoutY="191.0" orientation="VERTICAL" prefHeight="40.0" />
+    <Label fx:id="clicksLabel" layoutX="28.0" layoutY="201.0" text="Clicks" textFill="WHITE">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="hotkeyLbl1" layoutX="162.0" layoutY="201.0" text="CPS:" textFill="WHITE">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Label>
+    <JFXTextField fx:id="cpsTf" layoutX="203.0" layoutY="199.0" style="-fx-text-fill: white;" text="5000" />
+    <Separator layoutX="144.0" layoutY="236.0" orientation="VERTICAL" prefHeight="40.0" />
+    <Label fx:id="technologiesLabel" layoutX="28.0" layoutY="246.0" text="Technologies" textFill="WHITE">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Label>
+    <JFXToggleButton fx:id="bypassBtn" alignment="TOP_LEFT" layoutX="148.0" layoutY="230.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="382.0" size="8.0" text="Bypass KeyStrokes Plugins" textFill="WHITE" unToggleLineColor="#434343">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </JFXToggleButton>
+    <JFXToggleButton fx:id="directStopBtn" alignment="TOP_LEFT" layoutX="145.0" layoutY="276.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="382.0" size="8.0" text="Use Direct Stop Technology" textFill="WHITE" unToggleLineColor="#434343">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </JFXToggleButton>
+   <Separator layoutX="144.0" layoutY="36.0" orientation="VERTICAL" prefHeight="40.0" />
+   <Label fx:id="langLbl" layoutX="28.0" layoutY="46.0" text="Langauge" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <JFXComboBox fx:id="langComboBox" layoutX="162.0" layoutY="44.0" prefWidth="150.0" />
+</AnchorPane>

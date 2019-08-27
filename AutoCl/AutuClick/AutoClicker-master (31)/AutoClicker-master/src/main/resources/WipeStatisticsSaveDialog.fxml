@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="400.0" maxWidth="544" prefHeight="400.0" prefWidth="544" scaleShape="false" style="-fx-background-color: #22313F;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoclicker.tab.WipeStatisticsSaveDialog">
+   <children>
+      <AnchorPane fx:id="dialog" prefHeight="400.0" prefWidth="544.0" />
+      <Label alignment="CENTER" prefHeight="400.0" prefWidth="544.0" text="Are you sure you want to wipe all statistics?&#10; &#10; " textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+       <JFXButton buttonType="RAISED" layoutX="191.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#yes" prefHeight="33.0" prefWidth="62.0" ripplerFill="WHITE" style="-fx-border-radius: 50px; -fx-background-color: #e74c3c;" text="Yes!" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#no" prefHeight="33.0" prefWidth="62.0" ripplerFill="WHITE" style="-fx-border-radius: 50px; -fx-background-color: #3498db;" text="No!" textFill="WHITE" />
+   </children>
+</AnchorPane>

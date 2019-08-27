@@ -1,0 +1,2 @@
+com.circuitsofimagination.tictactoe.TicTacToeHumanPlayer
+com.circuitsofimagination.tictactoe.TicTacToeHumanPlayer$MoveMouseListener

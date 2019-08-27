@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="400.0" maxWidth="544" prefHeight="400.0" prefWidth="544" scaleShape="false" style="-fx-background-color: #22313F;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoclicker.tab.ClickTab">
+   <children>
+      <ImageView fx:id="img" fitHeight="278.0" fitWidth="242.0" layoutX="151.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gui/images/mouse/left.png" />
+         </image>
+      </ImageView>
+      <JFXCheckBox fx:id="lmb" layoutX="41.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#lmb" prefHeight="27.0" prefWidth="120.0" text="Left Mouse Button" textFill="WHITE" />
+      <JFXCheckBox fx:id="mmb" layoutX="195.0" layoutY="36.0" mnemonicParsing="false" onMouseClicked="#mmb" prefHeight="27.0" prefWidth="154.0" text="Middle Mouse Button" textFill="WHITE" />
+      <JFXCheckBox fx:id="rmb" layoutX="385.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#rmb" prefHeight="27.0" prefWidth="140.0" text="Right Mouse Button" textFill="WHITE" />
+   </children>
+</AnchorPane>

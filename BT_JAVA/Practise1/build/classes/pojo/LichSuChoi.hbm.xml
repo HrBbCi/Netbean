@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 14, 2013 1:16:04 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojo.LichSuChoi" table="LichSuChoi" schema="dbo" catalog="Caro">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userName2" class="pojo.NguoiDung" fetch="select" lazy="false">
+            <column name="userName2" not-null="true" />
+        </many-to-one>
+        <many-to-one name="nguoiThangCuoc" class="pojo.NguoiDung" fetch="select" lazy="false">
+            <column name="nguoiThangCuoc" />
+        </many-to-one>
+        <many-to-one name="userName1" class="pojo.NguoiDung" fetch="select" lazy="false">
+            <column name="userName1" not-null="true" />
+        </many-to-one>
+        <property name="diemNguoiChoi1" type="int">
+            <column name="diemNguoiChoi1" />
+        </property>
+        <property name="diemNguoiChoi2" type="int">
+            <column name="diemNguoiChoi2" />
+        </property>
+        <property name="thoiGianBD" type="timestamp">
+            <column name="thoiGianBD" />
+        </property>
+        <property name="thoiGianKT" type="timestamp">
+            <column name="thoiGianKT" />
+        </property>
+        <many-to-one name="giaiDau" class="pojo.GiaiDau" fetch="select">
+            <column name="maGiaiDau" not-null="false" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

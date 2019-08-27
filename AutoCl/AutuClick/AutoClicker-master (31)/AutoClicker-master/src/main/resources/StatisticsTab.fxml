@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="400.0" maxWidth="544" prefHeight="400.0" prefWidth="544" scaleShape="false" style="-fx-background-color: #22313F;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoclicker.tab.StatisticsTab">
+    <Separator layoutX="144.0" layoutY="43.0" orientation="VERTICAL" prefHeight="40.0" />
+    <Label fx:id="enableDisableLabel" layoutX="28.0" layoutY="53.0" text="Total Clicks" textFill="WHITE">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+   <Label fx:id="clicksLbl" layoutX="158.0" layoutY="53.0" text="500 Clicks done" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Separator layoutX="144.0" layoutY="86.0" orientation="VERTICAL" prefHeight="40.0" />
+   <Label fx:id="enableDisableLabel2" layoutX="28.0" layoutY="96.0" text="Hotkey Presses" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="hotkeyLbl" layoutX="158.0" layoutY="96.0" text="500 times pressed" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Separator layoutX="144.0" layoutY="129.0" orientation="VERTICAL" prefHeight="40.0" />
+   <Label fx:id="enableDisableLabel21" layoutX="28.0" layoutY="139.0" text="Time Used" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="timeLbl" layoutX="158.0" layoutY="139.0" text="5h, 10s used" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#wipeData" ripplerFill="WHITE" style="-fx-border-radius: 50px; -fx-background-color: #e74c3c;" text="Wipe Statistics Save" textFill="WHITE" />
+   <Separator layoutX="144.0" layoutY="172.0" orientation="VERTICAL" prefHeight="40.0" />
+   <Label fx:id="enableDisableLabel211" layoutX="28.0" layoutY="182.0" text="Wipe Data" textFill="WHITE">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+</AnchorPane>

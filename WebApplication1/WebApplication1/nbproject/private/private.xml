@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="CC">
+            <file>file:/C:/Users/Administrator/Desktop/WebApplication1/src/java/com/login/controller/LoginServlet.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/WebApplication1/web/JSP/Admin.jsp</file>
+            <file>file:/C:/Users/Administrator/Desktop/WebApplication1/web/JSP/Login.jsp</file>
+            <file>file:/C:/Users/Administrator/Desktop/WebApplication1/src/java/com/login/dao/LoginDao.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/WebApplication1/src/java/com/login/controller/LogoutServlet.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/WebApplication1/web/WEB-INF/web.xml</file>
+        </group>
+        <group>
+            <file>file:/H:/Netbean/WebApplication1/WebApplication1/src/java/com/login/bean/LoginBean.java</file>
+            <file>file:/H:/Netbean/WebApplication1/WebApplication1/src/java/com/login/controller/LogoutServlet.java</file>
+            <file>file:/H:/Netbean/WebApplication1/WebApplication1/src/java/com/login/controller/LoginServlet.java</file>
+            <file>file:/H:/Netbean/WebApplication1/WebApplication1/src/java/com/login/dao/LoginDao.java</file>
+        </group>
+    </open-files>
+</project-private>

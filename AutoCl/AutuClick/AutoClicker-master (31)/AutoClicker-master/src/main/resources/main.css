@@ -1,0 +1,20 @@
+.separator *.line {
+    -fx-border-style: solid;
+    -fx-border-color: #446CB3;
+    -fx-border-width: 2px;
+
+}
+
+.separator-light *.line {
+    -fx-border-style: solid !important;
+    -fx-border-color: gray !important;
+    -fx-border-width: 1px !important;
+    -fx-opacity: 5%;
+}
+
+.jfx-combo-box {
+}
+
+.jfx-combo-box *{
+    -fx-text-fill: #446CB3 !important;
+}

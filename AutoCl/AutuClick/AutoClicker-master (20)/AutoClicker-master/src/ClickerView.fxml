@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" fx:controller="ClickerController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="numClickText" layoutX="217.0" layoutY="145.0" promptText="Number of clicks" />
+      <TextField fx:id="delayText" layoutX="217.0" layoutY="187.0" promptText="Enter Delay between c. Set 5 for 5-10" />
+      <Button onMouseClicked="#onSubmitClick" layoutX="271.0" layoutY="230.0" mnemonicParsing="false" text="Start" />
+   </children>
+</AnchorPane>

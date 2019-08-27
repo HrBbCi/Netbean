@@ -1,0 +1,2 @@
+gui.TextAreaOutputStream
+gui.TextAreaOutputStream$1

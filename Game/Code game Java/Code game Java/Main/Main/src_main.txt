@@ -1,0 +1,5 @@
+"C:\\Documents and Settings\\Administrator\\My Documents\\JCreator Pro\\MyProjects\\Main\\src\\Configuration.java"
+"C:\\Documents and Settings\\Administrator\\My Documents\\JCreator Pro\\MyProjects\\Main\\src\\Figure.java"
+"C:\\Documents and Settings\\Administrator\\My Documents\\JCreator Pro\\MyProjects\\Main\\src\\game.java"
+"C:\\Documents and Settings\\Administrator\\My Documents\\JCreator Pro\\MyProjects\\Main\\src\\Main.java"
+"C:\\Documents and Settings\\Administrator\\My Documents\\JCreator Pro\\MyProjects\\Main\\src\\SquareBoard.java"

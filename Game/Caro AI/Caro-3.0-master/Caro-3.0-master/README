@@ -1,0 +1,25 @@
+Software: Caro 3.0
+Author: Hy Truong Son
+Major: BSc. Computer Science
+Class: 2013 - 2016
+Institution: Eotvos Lorand University
+Email: sonpascal93@gmail.com
+Website: http://people.inf.elte.hu/hytruongson/
+Copyright 2015 (c) Hy Truong Son. All rights reserved.
+
+Overall
+-------
+Game Caro version 3.0. Human vs Machine. Artificial Intelligence. Different name: Tic-tac-toe N x N table.
+
+Structure
+---------
+* Eclipse project in Java
+* Folder ~/bin/: Execution files (.class files).
+* Folder ~/src/: Source code files (.java files).
+* File ~/src/MainProgram.java: Main program
+* File ~/src/ArtificialIntelligence.java: Brain of the software.
+
+Usage
+-----
+$ cd bin
+$ java MainProgram

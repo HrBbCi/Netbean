@@ -1,0 +1,240 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+    int i,j;
+    
+    for(i=1;i<=100;i++){
+        system("cls");
+        printf("\n\t\t\t Connecting from Love Server... ");
+        printf("\n\n\t\t\tSend ......... to my love : :");
+        printf("\n\n\t\t\t\tLoading...%d %c", i, '%');
+        printf("\n\n\t\t\t------------------------------------------");
+        if(i==11){
+            printf("\n\n\t\t\t\tA");
+            printf("\n\n\t\t Em yeu! Anh co vai dieu muon noi voi em! ");
+            sleep(4000);
+        }
+        if(i==22){
+            printf("\n\n\t\t\tAN");
+            printf("\n\n\t\tAnh co the lam tat ca vi em , chi can em duoc vui !");
+            sleep(5000);
+        }
+        if(i==33){
+            printf("\n\n\t\t\t\tANH");
+            printf("\n\n\t\t Anh nguyen lam nguoi tham lang sau em !");
+            sleep(5000);
+        }
+        if(i==44){
+            printf("\n\n\t\t\t\tANH Y");
+            printf("\n\n\t\tAnh se lam muon loai hoa toa huong ru em ngu?");
+            sleep(5000);
+        }
+        if(i==55){
+            printf("\n\n\t\t\t\tANH YE");
+            printf("\n\n\t\tAnh se la anh binh minh cho moi sang em thuc giac");
+            sleep(4000);
+        }
+        if(i==66){
+            printf("\n\n\t\t\t\tANH YEU");
+            printf("\n\n\t\tMoi ngay khong gap em ngo nhu dai 1 nam vay !");
+            sleep(4000);
+        }
+        if(i==77){
+            printf("\n\n\t\t\tANH YEU E");
+            printf("\n\n\t\tBoi vi anh yeu em ! Va`....chang bao gio anh ngung yeu em :-x !");
+            sleep(4000);
+        }
+        if(i==88){
+            printf("\n\n\t\t\t\tANH YEU EM! ");
+            printf("\n\n\t\t\tLam ban gai cua anh nhe! :-x ");
+            sleep(4000);
+        }
+        if(i==99){
+            for(j=1;j<=23;j++){
+                system("cls");
+                if(j==1){
+                    printf("\t\t   *                \n");
+                    sleep(500);
+                }
+
+                if(j== 2){
+                        printf("\t\t   * .                \n");
+                        sleep(500);
+                }
+                if(j== 3){
+                        printf("\t\t   * .                \n");
+                        printf("\t\t       .              \n");
+                        sleep(500);
+                }
+                if(j== 4){
+                        printf("\t\t   * .   .            \n");
+                        printf("\t\t       .              \n");
+                        sleep(500);
+                }
+                if(j== 5){
+                        printf("\t\t   * .   . *         \n");
+                        printf("\t\t       .              \n");
+                        sleep(500);
+                }
+                if(j== 6){
+                        printf("\t\t   * .   . *.         \n");
+                        printf("\t\t       .              \n");
+                        sleep(500);
+                }
+                if(j== 7){
+                        printf("\t\t   * .   . *.         \n");
+                        printf("\t\t       .     *        \n");
+                        sleep(500);
+                }
+                if(j== 8){
+                        printf("\t\t   * .   . *.         \n");
+                        printf("\t\t       .     *        \n");
+                        printf("\t\t             *        \n");
+                        sleep(500);
+                }
+                if(j== 9){
+                        printf("\t\t   * .   . *.         \n");
+                        printf("\t\t       .     *        \n");
+                        printf("\t\t             *        \n");
+                        printf("\t\t           *          \n");
+                        sleep(500);
+                }
+                if(j== 10){
+                        printf("\t\t   * .   . *.         \n");
+                        printf("\t\t       .     *        \n");
+                        printf("\t\t             *        \n");
+                        printf("\t\t           *          \n");
+                        printf("\t\t         *            \n");
+                        sleep(500);
+                }
+                if(j== 11){
+                        printf("\t\t   * .   . *.         \n");
+                        printf("\t\t       .     *        \n");
+                        printf("\t\t             *        \n");
+                        printf("\t\t           *          \n");
+                        printf("\t\t         *            \n");
+                        printf("\t\t       *              \n");
+                        sleep(500);
+                }
+                if(j==12){
+                        printf("\t\t   * .   . *.         \n");
+                        printf("\t\t       .     *        \n");
+                        printf("\t\t             *        \n");
+                        printf("\t\t           *          \n");
+                        printf("\t\t     *   *            \n");
+                        printf("\t\t       *              \n");
+                        sleep(500);
+                }
+                if(j==13){
+                    printf("\t\t   * .   . *.         \n");
+                    printf("\t\t       .     *        \n");
+                    printf("\t\t             *        \n");
+                    printf("\t\t   *       *          \n");
+                    printf("\t\t     *   *            \n");
+                    printf("\t\t       *              \n");
+                    sleep(500);
+                }
+                if(j==14){
+                    printf("\t\t   * .   . *.         \n");
+                    printf("\t\t       .     *        \n");
+                    printf("\t\t *           *        \n");
+                    printf("\t\t   *       *          \n");
+                    printf("\t\t     *   *            \n");
+                    printf("\t\t       *              \n");
+                    sleep(500);
+                }
+                if(j==15){
+                    printf("\t\t   * .   . *.         \n");
+                    printf("\t\t *     .     *        \n");
+                    printf("\t\t *           *        \n");
+                    printf("\t\t   *       *          \n");
+                    printf("\t\t     *   *            \n");
+                    printf("\t\t       *              \n");
+                    sleep(500);
+                }
+                if(j==16){
+                    printf("\t\t  .* .   . *.          \n");
+                    printf("\t\t *     .     *         \n");
+                    printf("\t\t *           *         \n");
+                    printf("\t\t   *       *           \n");
+                    printf("\t\t     *   *             \n");
+                    printf("\t\t       *               \n");
+                    sleep(500);
+                }
+                if(j==17){
+                    printf("\t\t  .* .   . *.            .* .   . *.          \n");
+                    printf("\t\t *     .     *          *     .     *         \n");
+                    printf("\t\t *    ANH    *   YE^U   *     EM    *         \n");
+                    printf("\t\t  *         *            *         *           \n");
+                    printf("\t\t     *   *                  *   *             \n");
+                    printf("\t\t       *                      *               \n");
+                    sleep(500);
+                }
+                if(j==18){
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t      ANH        YE^U         EM              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    sleep(500);
+                }
+                if(j==19){
+                    printf("\t\t  .* .   . *.            .* .   . *.          \n");
+                    printf("\t\t *     .     *          *     .     *         \n");
+                    printf("\t\t *    ANH    *   YE^U   *     EM    *         \n");
+                    printf("\t\t  *         *            *         *           \n");
+                    printf("\t\t     *   *                  *   *             \n");
+                    printf("\t\t       *                      *               \n");
+                    sleep(500);
+                }
+               if(j==20){
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t      ANH        YE^U         EM              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    sleep(500);
+                }
+                if(j==21){
+                    printf("\t\t  .* .   . *.            .* .   . *.          \n");
+                    printf("\t\t *     .     *          *     .     *         \n");
+                    printf("\t\t *    ANH    *   YE^U   *     EM    *         \n");
+                    printf("\t\t  *         *            *         *           \n");
+                    printf("\t\t     *   *                  *   *             \n");
+                    printf("\t\t       *                      *               \n");
+                    sleep(500);
+                }
+                if(j==22){
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t      ANH        YE^U         EM              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    printf("\t\t                                              \n");
+                    sleep(500);
+                }
+                if(j==23){
+                    printf("\t\t  .* .   . *.            .* .   . *.          \n");
+                    printf("\t\t *     .     *          *     .     *         \n");
+                    printf("\t\t *    ANH    *   YE^U   *     EM    *         \n");
+                    printf("\t\t  *         *            *         *           \n");
+                    printf("\t\t     *   *                  *   *             \n");
+                    printf("\t\t       *                      *               \n");
+                    sleep(500);
+                }
+                
+            }
+            sleep(5000);
+        }
+        if(i==100){
+            printf("\n\n\t\t\t\t100 %c Yeu Em ! ", '%');
+            printf("\n\n\t\t\tYeu em chon doi   ");
+            sleep(5000);
+        }
+        sleep(100);
+    }
+    return 0;
+}

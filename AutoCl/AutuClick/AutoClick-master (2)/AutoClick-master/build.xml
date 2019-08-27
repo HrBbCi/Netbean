@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AutoClick" default="jar" basedir=".">
+
+	<description>building AutoClick project into the build folder</description>
+	<!-- set global properties -->
+	<property environment="env" />
+	<property name="appName" value="${ant.project.AutoClick}" />
+	<property name="version" value="1.0" />
+	<property file="build.properties" />
+
+	<!-- exclude java src -->
+	<patternset id="no.java">
+		<exclude name="**/*.java" />
+	</patternset>
+
+	<!-- initializing, clearing old categories, creating categories, copying files -->
+	<target name="init" description="initializing, clearing, creating categories, copying files">
+
+		<mkdir dir="${deployment.dir}" />
+		<mkdir dir="${classes.dir}" />
+		
+		<delete includeemptydirs="true">
+			<fileset dir="${deployment.dir}" includes="**/*" />
+		</delete >
+		<delete includeemptydirs="true">
+			<fileset dir="${classes.dir}" includes="**/*" />
+		</delete >
+
+		<mkdir dir="${bin.dir}" />
+		<mkdir dir="${drivers.deployment.dir}" />
+		<mkdir dir="${autoClick_lib.dir}" />
+
+		<copy todir="${classes.dir}">
+			<fileset dir="${src.dir}">
+				<include name="log4j.properties" />
+			</fileset>
+		</copy >
+		
+		<copy todir="${bin.dir}">
+			<fileset dir="${shell.dir}">
+				<patternset refid="no.java" />
+			</fileset>
+		</copy >
+		
+		<copy todir="${drivers.deployment.dir}">
+			<fileset dir="${drivers.src.dir}">
+				<patternset refid="no.java" />
+			</fileset>
+		</copy >
+
+		<copy todir="${autoClick_lib.dir}">
+			<fileset dir="${lib.dir}">
+				<patternset refid="no.java" />
+			</fileset>
+		</copy >
+
+		<copy todir="${deployment.dir}">
+			<fileset dir="">
+				<include name="autoclick.log" />
+				<include name="BaiduAdClickConfig.json" /> 
+			</fileset>
+		</copy >
+	</target>
+
+	<path id="classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="compile" depends="init" description="compiling source files">
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" source="1.7" target="1.7" includeantruntime="true" encoding="UTF-8">
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+
+
+
+	<target name="jar" depends="compile" description="making jar file">
+
+		<pathconvert property="external.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<!-- deleting absolute directory -->
+					<flattenmapper />
+					<!-- adding autoClick_lib prefix -->
+					<globmapper from="*" to="autoClick_lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="classpath" />
+		</pathconvert>
+		<echo message="Classpath = ${external.classpath}" />
+		<jar jarfile="${deployment.dir}/AutoClick.jar" basedir="${classes.dir}">
+			<include name="**/*.*" />
+			<manifest>
+				<attribute name="Main-Class" value="com.bigcay.ac.AutoClick" />
+				<attribute name="Class-Path" value=". ${external.classpath}" />
+			</manifest>
+		</jar>
+	</target>
+</project>

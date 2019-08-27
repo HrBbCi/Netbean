@@ -1,0 +1,79 @@
+CREATE DATABASE `project` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE TABLE `admin` (
+  `idad` varchar(45) NOT NULL,
+  `user` varchar(45) DEFAULT NULL,
+  `pass` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idad`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `diem` (
+  `idlop` varchar(45) NOT NULL,
+  `mon` varchar(45) DEFAULT NULL,
+  `idmon` varchar(45) NOT NULL,
+  `idsv` varchar(45) NOT NULL,
+  `diem15` float DEFAULT NULL,
+  `diem45` float DEFAULT NULL,
+  `diemthi` float DEFAULT NULL,
+  `tongket` float DEFAULT NULL,
+  `ketqua` varchar(45) DEFAULT NULL,
+  `idgv` varchar(45) DEFAULT NULL,
+  KEY `FK_Mon_idx` (`idmon`),
+  KEY `FK_SV_idx` (`idsv`),
+  CONSTRAINT `FK_Mon` FOREIGN KEY (`idmon`) REFERENCES `mon` (`idmon`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `FK_SV` FOREIGN KEY (`idsv`) REFERENCES `sinhvien` (`idsv`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `giaovien` (
+  `idgv` varchar(45) NOT NULL,
+  `hoten` varchar(45) DEFAULT NULL,
+  `idmon` varchar(45) DEFAULT NULL,
+  `idkhoa` varchar(45) DEFAULT NULL,
+  `idlop` varchar(45) DEFAULT NULL,
+  `ngaysinh` date DEFAULT NULL,
+  `gioitinh` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `sdt` varchar(45) DEFAULT NULL,
+  `pass` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idgv`),
+  KEY `FK_IDmon_idx` (`idmon`),
+  CONSTRAINT `FK_IDmon` FOREIGN KEY (`idmon`) REFERENCES `mon` (`idmon`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `giaovu` (
+  `idgvu` varchar(45) NOT NULL,
+  `user` varchar(45) DEFAULT NULL,
+  `pass` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idgvu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `khoa` (
+  `idkhoa` varchar(45) NOT NULL,
+  `khoa` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idkhoa`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `lop` (
+  `idlop` varchar(45) NOT NULL,
+  `lop` varchar(45) DEFAULT NULL,
+  `idkhoa` varchar(45) DEFAULT NULL,
+  `khoahoc` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idlop`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `mon` (
+  `idmon` varchar(45) NOT NULL,
+  `mon` varchar(45) DEFAULT NULL,
+  `tinchi` varchar(45) DEFAULT NULL,
+  `idkhoa` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idmon`),
+  KEY `FK_KhoaHoc_idx` (`idkhoa`),
+  CONSTRAINT `FK_KhoaHoc` FOREIGN KEY (`idkhoa`) REFERENCES `khoa` (`idkhoa`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `sinhvien` (
+  `idsv` varchar(45) NOT NULL,
+  `hoten` varchar(45) DEFAULT NULL,
+  `idlop` varchar(45) DEFAULT NULL,
+  `hedt` varchar(45) DEFAULT NULL,
+  `ngaysinh` date DEFAULT NULL,
+  `diachi` varchar(45) DEFAULT NULL,
+  `gioitinh` varchar(45) DEFAULT NULL,
+  `sdt` varchar(45) DEFAULT NULL,
+  `idkhoa` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idsv`),
+  KEY `FK_Lop_idx` (`idlop`),
+  CONSTRAINT `FK_Lop` FOREIGN KEY (`idlop`) REFERENCES `lop` (`idlop`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

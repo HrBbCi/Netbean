@@ -1,0 +1,33 @@
+2016-02-27 20:34:37 WARN  BaiduAdClickJob:182 - title: 包子加盟_百度搜索
+2016-02-27 20:34:41 WARN  BaiduAdClickJob:228 - search for target text: 包子加盟
+2016-02-27 20:34:42 WARN  BaiduAdClickJob:235 - [成功] - 恭喜您成功通过代理(110.72.22.51:8123)进行点击！
+2016-02-27 20:34:48 WARN  BaiduAdClickJob:149 - proxyRow:121.31.194.0:8123
+2016-02-27 20:34:52 WARN  BaiduAdClickJob:182 - title: 包子加盟_百度搜索
+2016-02-27 20:34:56 WARN  BaiduAdClickJob:228 - search for target text: 包子加盟
+2016-02-27 20:34:57 WARN  BaiduAdClickJob:235 - [成功] - 恭喜您成功通过代理(121.31.194.0:8123)进行点击！
+2016-02-27 20:35:03 WARN  BaiduAdClickJob:269 - BaiduAdClickJob ends.
+2016-02-27 20:35:18 WARN  BaiduAdClickJob:110 - BaiduAdClickJob begins.
+2016-02-27 20:35:20 WARN  BaiduAdClickJob:125 - proxyResult: 
+183.218.116.117:8123
+183.216.160.209:8123
+2016-02-27 20:35:21 WARN  BaiduAdClickJob:149 - proxyRow:183.218.116.117:8123
+2016-02-27 20:35:23 WARN  BaiduAdClickJob:182 - title: 包子加盟_百度搜索
+2016-02-27 20:35:27 WARN  BaiduAdClickJob:228 - search for target text: 包子加盟
+2016-02-27 20:35:28 WARN  BaiduAdClickJob:235 - [成功] - 恭喜您成功通过代理(183.218.116.117:8123)进行点击！
+2016-02-27 20:35:34 WARN  BaiduAdClickJob:149 - proxyRow:183.216.160.209:8123
+2016-02-27 20:35:37 WARN  BaiduAdClickJob:182 - title: 包子加盟_百度搜索
+2016-02-27 20:35:40 WARN  BaiduAdClickJob:228 - search for target text: 包子加盟
+2016-02-27 20:35:41 WARN  BaiduAdClickJob:235 - [成功] - 恭喜您成功通过代理(183.216.160.209:8123)进行点击！
+2016-02-27 20:35:47 WARN  BaiduAdClickJob:269 - BaiduAdClickJob ends.
+2016-02-27 20:35:47 WARN  BaiduAdClickJob:110 - BaiduAdClickJob begins.
+2016-02-27 20:35:48 WARN  BaiduAdClickJob:125 - proxyResult: 
+117.165.166.219:8123
+2016-02-27 20:35:50 WARN  BaiduAdClickJob:149 - proxyRow:117.165.166.219:8123
+2016-02-27 20:35:54 WARN  BaiduAdClickJob:182 - title: 包子加盟_百度搜索
+2016-02-27 20:35:57 WARN  BaiduAdClickJob:228 - search for target text: 包子加盟
+2016-02-27 20:35:59 WARN  BaiduAdClickJob:235 - [成功] - 恭喜您成功通过代理(117.165.166.219:8123)进行点击！
+2016-02-27 20:36:05 WARN  BaiduAdClickJob:269 - BaiduAdClickJob ends.
+2016-02-27 20:36:17 WARN  BaiduAdClickJob:110 - BaiduAdClickJob begins.
+2016-02-27 20:36:18 WARN  BaiduAdClickJob:125 - proxyResult: 
+ERROR|没有找到符合条件的IP
+2016-02-27 20:36:19 WARN  BaiduAdClickJob:136 - Failed to extract the proxy addresses, try again later. 

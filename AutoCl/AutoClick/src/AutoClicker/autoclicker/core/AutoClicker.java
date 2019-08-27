@@ -1,0 +1,45 @@
+package AutoClicker.autoclicker.core;
+
+import AutoClicker.autoclicker.core.workers.ClickerService;
+import AutoClicker.autoclicker.gui.Controller;
+
+/**
+ * Class represents the actual autoclicker.
+ * 
+ * @author Troy Shaw
+ */
+public class AutoClicker {
+
+	private Controller controller;
+	private AutoclickerModel model;
+
+	private Clicker clicker;
+	private ClickerService clickerService;
+
+	public AutoClicker(AutoclickerModel model, Controller controller) {
+		this.model = model;
+		this.controller = controller;
+
+		initialiseVariables();
+	}
+
+	private void initialiseVariables() {
+		clicker = new Clicker();
+
+		clickerService = new ClickerService(clicker, controller);
+	}
+
+	public boolean isRunning() {
+		return model.isClicking();
+	}
+
+	public void beginClicking() {
+		model.setIsClicking(true);
+		clickerService.startClicking(model.getTimeBetweenClicks());
+	}
+
+	public void stopClicking() {
+		model.setIsClicking(false);
+		clickerService.stopClicking();
+	}
+}

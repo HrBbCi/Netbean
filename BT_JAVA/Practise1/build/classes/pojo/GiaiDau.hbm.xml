@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 14, 2013 1:16:04 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojo.GiaiDau" table="GiaiDau" schema="dbo" catalog="Caro">
+        <id name="maGiaiDau" type="int">
+            <column name="maGiaiDau" />
+            <generator class="identity" />
+        </id>
+        <property name="tenGiai" type="string">
+            <column name="tenGiai" not-null="true" />
+        </property>
+        <property name="thoiGianBatDau" type="timestamp">
+            <column name="thoiGianBatDau" length="23" not-null="true" />
+        </property>
+        <property name="thoiGianKetThuc" type="timestamp">
+            <column name="thoiGianKetThuc" length="23" not-null="true" />
+        </property>
+        <property name="giaiNhat" type="string">
+            <column name="giaiNhat" />
+        </property>
+        <property name="giaiNhi" type="string">
+            <column name="giaiNhi" />
+        </property>
+        <property name="giaiBa" type="string">
+            <column name="giaiBa" />
+        </property>
+        <property name="giaiTu" type="string">
+            <column name="giaiTu" />
+        </property>
+        <set name="lichSuGiaiDaus" inverse="true">
+            <key>
+                <column name="maGiaiDau" not-null="true" />
+            </key>
+            <one-to-many class="pojo.LichSuGiaiDau" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="544" style="-fx-background-color: #22313F;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoclicker.tab.ModeTab">
+   <children>
+      <Pane layoutY="54.0" prefHeight="166.0" prefWidth="549.0">
+         <children>
+            <JFXCheckBox fx:id="holdBtn" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" text="Enable Hold" textFill="WHITE" />
+            <Label layoutX="15.0" layoutY="47.0" prefHeight="88.0" prefWidth="146.0" text="This mode enables the autoclicker, only if you hold the selected key!" textFill="WHITE" wrapText="true" />
+            <Separator layoutX="170.0" layoutY="29.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="4.0" />
+            <JFXCheckBox fx:id="switchBtn" layoutX="194.0" layoutY="30.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" text="Enable Switch" textFill="WHITE" />
+            <Label layoutX="195.0" layoutY="47.0" prefHeight="88.0" prefWidth="146.0" text="This mode toggles the autoclicker if you press the selected key!" textFill="WHITE" wrapText="true" />
+            <Separator layoutX="350.0" layoutY="29.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="4.0" />
+            <JFXCheckBox fx:id="holdToDisableBtn" layoutX="374.0" layoutY="30.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" text="Enable Hold-To-Disable" textFill="WHITE" />
+            <Label layoutX="375.0" layoutY="47.0" prefHeight="88.0" prefWidth="146.0" text="This mode only run if you NOT press the selected key! Tip: Don't forget the key :D" textFill="WHITE" wrapText="true" />
+         </children></Pane>
+      <Pane layoutY="194.0" prefHeight="166.0" prefWidth="549.0">
+         <children>
+            <JFXCheckBox fx:id="fireButtonBtn" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" text="Enable Firebutton" textFill="WHITE" />
+            <Label layoutX="15.0" layoutY="47.0" prefHeight="88.0" prefWidth="146.0" text="This mode enable an autoclicker that clicks at the pressed mouse button!" textFill="WHITE" wrapText="true" />
+            <Separator layoutX="170.0" layoutY="29.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="4.0" />
+            <JFXCheckBox fx:id="switchFireButtonBtn" layoutX="184.0" layoutY="30.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" text="Enable Switch-Firebutton" textFill="WHITE" />
+            <Label layoutX="195.0" layoutY="47.0" prefHeight="88.0" prefWidth="146.0" text="This mode is the same as &quot;Firebutton&quot;, but in switch option!" textFill="WHITE" wrapText="true" />
+            <Separator layoutX="350.0" layoutY="29.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="4.0" />
+            <JFXCheckBox fx:id="deactivatedButton" layoutX="374.0" layoutY="30.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" text="Deactivated" textFill="WHITE" />
+            <Label layoutX="375.0" layoutY="47.0" prefHeight="88.0" prefWidth="146.0" text="This is the best mode of all, it does nothing 😂" textFill="WHITE" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

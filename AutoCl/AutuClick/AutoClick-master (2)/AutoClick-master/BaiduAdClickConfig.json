@@ -1,0 +1,7 @@
+{
+  "maxThreadNumber" : 1,
+  "proxyExtractUrl" : "http://xvre.daili666api.com/ip/?tid=557510611046590&num={PROXYNUM}&operator=1,2,3&delay=1&category=2&foreign=none&filter=on&protocol=https",
+  "proxyExtractNumber" : 10,
+  "searchKeyword" : "包子加盟",
+  "targetLinkPartialTexts" : [ "包子加盟", "天津吕记大帅包", "全国包子加盟店店，吕记包子", "吕记包子包子加盟店", "包子加盟店认准吕记包子" ]
+}

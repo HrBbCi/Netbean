@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoclicker.controllers.AutoClickerGUIController">
+   <VBox id="view" layoutX="206.0" prefHeight="400.0" prefWidth="544" style="-fx-background-color: red;" />
+   <Pane fx:id="stock" prefHeight="400.0" prefWidth="206.0" style="-fx-background-color: #11202E;">
+      <Label fx:id="titleLbl" layoutX="14.0" layoutY="21.0" text="AutoClicker v1.2" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="0.0" layoutX="14.0" layoutY="69.0" text="NAVIGATION" textAlignment="CENTER" textFill="#797676" wrapText="true">
+         <font>
+            <Font name="MS UI Gothic" size="9.0" />
+         </font>
+      </Label>
+      <Separator fx:id="splitter" layoutY="263.0" prefHeight="5.0" prefWidth="100.0" styleClass="separator-light" />
+       <Separator layoutY="50.0" prefHeight="5.0" prefWidth="100.0" styleClass="separator-light" />
+      <FontAwesomeIcon fx:id="soonWrench" fill="WHITE" glyphName="WRENCH" layoutX="450.0" layoutY="169.0" size="5em" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Label fx:id="generalSettings" layoutX="56.0" layoutY="89.0" onMouseClicked="#generalSettings" text="General Settings" textFill="WHITE" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="COGS" layoutX="36.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Label fx:id="clicks" layoutX="56.0" layoutY="123.0" onMouseClicked="#clickTab" text="Clicks" textFill="WHITE" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="BARS" layoutX="36.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Label fx:id="mode" layoutX="57.0" layoutY="151.0" onMouseClicked="#modeView" text="Mode" textFill="WHITE" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="BOLT" layoutX="37.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Label fx:id="clickCounter" layoutX="57.0" layoutY="178.0" onMouseClicked="#clickCounter" text="Click Counter" textFill="WHITE" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="BUG" layoutX="37.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Label fx:id="statistics" layoutX="57.0" layoutY="207.0" onMouseClicked="#showStatistics" text="Statistics" textFill="WHITE" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="FLAG" layoutX="37.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Label fx:id="dataManagement" layoutX="58.0" layoutY="236.0" onMouseClicked="#showDataManagement" text="Data Management" textFill="WHITE" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="RECYCLE" layoutX="38.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+   </Pane>
+   <FontAwesomeIcon fill="WHITE" glyphName="TIMES" layoutX="720.0" layoutY="30.0" onMouseClicked="#closeProgram" size="2em" strokeType="OUTSIDE" strokeWidth="0.0" />
+   <FontAwesomeIcon fx:id="minimizeButton" fill="WHITE" glyphName="MINUS" layoutX="690.0" layoutY="30.0" onMouseClicked="#minimizeProgram" size="1.7em" strokeType="OUTSIDE" strokeWidth="0.0" />
+   <Separator layoutX="217.0" layoutY="9.0" orientation="VERTICAL" prefHeight="20.0" />
+   <Label id="tabTitle" layoutX="228.0" layoutY="9.0" text="{tab}" textFill="WHITE">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Label>
+   <Label fx:id="soonLbl" alignment="CENTER" layoutX="206.0" layoutY="90.0" prefHeight="310.0" prefWidth="544.0" text="Under Construction!&#10;Im Sorry, we're currently building this feature!" textAlignment="CENTER" textFill="WHITE" visible="false">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <effect>
+         <Blend mode="ADD" />
+      </effect>
+   </Label>
+
+
+
+</Pane>

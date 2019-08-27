@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="400.0" maxWidth="544" prefHeight="400.0" prefWidth="544" scaleShape="false" style="-fx-background-color: #22313F;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoclicker.tab.DataManagementTab">
+   <children>
+      <FontAwesomeIcon fill="WHITE" glyphName="COGS" layoutX="35.0" layoutY="72.0" size="1.5em" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <JFXProgressBar fx:id="systemProgress" layoutX="150.0" layoutY="64.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="63.0" layoutY="52.0" text="System" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="135.0" layoutY="44.0" orientation="VERTICAL" prefHeight="40.0" />
+      <Label fx:id="systemLbl" layoutX="359.0" layoutY="53.0" text="100.0%" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="SLIDERS" layoutX="35.0" layoutY="116.0" size="1.5em" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <JFXProgressBar fx:id="settingsProgress" layoutX="150.0" layoutY="108.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="63.0" layoutY="96.0" text="Settings" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="135.0" layoutY="88.0" orientation="VERTICAL" prefHeight="40.0" />
+      <Label fx:id="settingsLbl" layoutX="359.0" layoutY="97.0" text="100.0%" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="AREA_CHART" layoutX="35.0" layoutY="160.0" size="1.5em" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <JFXProgressBar fx:id="statisticProgress" layoutX="150.0" layoutY="152.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="63.0" layoutY="140.0" text="Statistics" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="135.0" layoutY="132.0" orientation="VERTICAL" prefHeight="40.0" />
+      <Label fx:id="statisticLbl" layoutX="359.0" layoutY="141.0" text="100.0%" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="FILE_TEXT" layoutX="35.0" layoutY="204.0" size="1.5em" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <JFXProgressBar fx:id="langaugeProgress" layoutX="150.0" layoutY="196.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="63.0" layoutY="184.0" text="Assets" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="135.0" layoutY="176.0" orientation="VERTICAL" prefHeight="40.0" />
+      <Label fx:id="langaugeLbl" layoutX="359.0" layoutY="185.0" text="100.0%" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" glyphName="DATABASE" layoutX="35.0" layoutY="274.0" size="1.5em" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Label layoutX="63.0" layoutY="254.0" text="Disk Space" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="154.0" layoutY="246.0" orientation="VERTICAL" prefHeight="40.0" />
+      <Separator layoutX="6.0" layoutY="231.0" prefWidth="530.0" />
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="104.0" layoutY="301.0" mnemonicParsing="false" ripplerFill="WHITE" style="-fx-background-color: #e74c3c; -fx-border-radius: 50px;" text="Wipe Settings" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="232.0" layoutY="301.0" mnemonicParsing="false" ripplerFill="WHITE" style="-fx-background-color: #e74c3c; -fx-border-radius: 50px;" text="Wipe Statistics" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="368.0" layoutY="301.0" mnemonicParsing="false" ripplerFill="WHITE" style="-fx-background-color: #e74c3c; -fx-border-radius: 50px;" text="Wipe All" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="diskLbl" layoutX="177.0" layoutY="255.0" text="Free: 2GiB (20%), Used: 50GB (80%)" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

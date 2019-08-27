@@ -1,0 +1,2 @@
+gamecaro.DocumentEventObject
+gamecaro.JEventQueue
